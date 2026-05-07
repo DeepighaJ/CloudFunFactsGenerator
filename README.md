@@ -26,12 +26,14 @@ The Cloud Fun Facts Generator lets users instantly generate AI-crafted, witty cl
 
 ## 🏗️ Architecture Diagram
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/259e5cb9-ae8c-42ff-939e-3aca7579550a" />
+<img width="800" height="400" alt="architecture_diagram" src="https://github.com/user-attachments/assets/c45b6ec3-287c-4e7e-bfd2-08fc32e8b088" />
+
 
 ## 🌐 Final Result
 This is what your project will look like once built:
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/0152a39c-cbe5-47bb-a4ee-1042d13df6d0" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 104833" src="https://github.com/user-attachments/assets/1afc4ccc-9b48-41ab-a1be-db7a6a6ac625" />
+
 
 ---
 
@@ -74,44 +76,47 @@ This is what your project will look like once built:
 - Table name: `CloudFacts`
 - Partition key: `factId` (String)
 - Populate the table with cloud computing fact records
-<img width="800" height="400" alt="img10" src="https://github.com/user-attachments/assets/d3bcd4fc-81a8-4e0e-8643-3524141e8fd0" />
+- 
+<img width="800" height="400" alt="Screenshot 2026-05-06 103040" src="https://github.com/user-attachments/assets/38e09d5f-bc35-4c69-bb12-d0bb2b50cbcb" />
 
-<img width="800" height="400" alt="img11" src="https://github.com/user-attachments/assets/c7678caa-2871-44a5-9246-171b26bae68c" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 103345" src="https://github.com/user-attachments/assets/2572ad7e-75cf-4c45-8b7d-0d58596a04e9" />
+
 
 #### 2. Create the Lambda Function
 - Runtime: **Python 3.x**
 - Attach an IAM role with permissions for DynamoDB and Bedrock
 - Deploy the function from `lambda/lambda_function.py`
   
-<img width="800" height="400" alt="img1" src="https://github.com/user-attachments/assets/03ba197f-528f-4339-ae30-5176128888c9" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 100801" src="https://github.com/user-attachments/assets/24a1d4ba-7397-4025-b29e-dfb2ad62fefb" />
 
-<img width="800" height="400" alt="Screenshot 2026-05-06 103811" src="https://github.com/user-attachments/assets/69f9f5ae-d2fe-4c42-b155-93da47e9dba2" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 103811" src="https://github.com/user-attachments/assets/b9c6ef6f-6e44-42e2-a999-c4484ffe28d5" />
 
-<img width="800" height="400" alt="Screenshot 2026-05-06 104325" src="https://github.com/user-attachments/assets/b662418e-872b-41e7-965b-73d3133e40b9" />
 
 #### 3. Set Up API Gateway (HTTP API)
 - Create a new **HTTP API**
 - Add a `GET /funfact` route
 - Integrate the route with the Lambda function
 - Enable **CORS** for the Amplify frontend origin
-<img width="800" height="400" alt="img7" src="https://github.com/user-attachments/assets/01cb3dfe-9d9f-491d-a30e-32b53d9ad6df" />
 
-<img width="800" height="200" alt="img8" src="https://github.com/user-attachments/assets/ca9ecef5-27af-46a7-ab1f-123791d97125" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 102512" src="https://github.com/user-attachments/assets/e2189579-161a-46ed-8d59-6899b5167492" />
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/c6bc2e83-61fb-4475-a88d-c8b9661eafec" />
+<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/960283bd-8a29-461d-9c2a-5655a0039a6d" />
+
+<img width="800" height="400" alt="Screenshot 2026-05-06 104644" src="https://github.com/user-attachments/assets/718b8603-9207-44f3-bf7b-789f69f16284" />
 
 #### 4. Configure Amazon Bedrock
 - Enable model access in the AWS Console by submiting onetime usecase and provide IAM permissions
 - Select and enable the **Amazon Nova Lite** model
 - Update the Lambda function with the correct model ID and inference parameters
   
-<img width="800" height="400" alt="Screenshot 2026-05-06 104212" src="https://github.com/user-attachments/assets/dd9fb0b0-2d60-4961-9ec4-206be67c1a93" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 104212" src="https://github.com/user-attachments/assets/7af11bac-bc5a-4b98-981a-17a4d9ba142e" />
+
 
 #### 5. Deploy the Frontend via AWS Amplify
 - Upload `frontend/index.html` to a new Amplify app
 - Update the API endpoint URL in the frontend code
 - Trigger a deployment and verify the live URL
-<img width="800" height="400" alt="img13" src="https://github.com/user-attachments/assets/0efb1f19-5a04-450c-b1a3-08d90477d733" />
+<img width="800" height="400" alt="Screenshot 2026-05-06 104833" src="https://github.com/user-attachments/assets/9b255729-d038-4c74-b7db-26aa60c23f4b" />
 
 ---
 
