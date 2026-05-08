@@ -39,7 +39,7 @@ This is what your project will look like once built:
 
 ## 🎥 Demo
 
-[▶️ Watch Demo Video](ADD_VIDEO_LINK_HERE)
+<a href="https://drive.google.com/file/d/1RuZmila2enzo-SuyfwZrRF3XrX1LwYAS/view?usp=drive_link">▶️ Watch Demo Video</a>
 
 ---
 
