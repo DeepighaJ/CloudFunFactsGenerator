@@ -34,12 +34,11 @@ This is what your project will look like once built:
 
 <img width="800" height="400" alt="Screenshot 2026-05-06 104833" src="https://github.com/user-attachments/assets/1afc4ccc-9b48-41ab-a1be-db7a6a6ac625" />
 
-
 ---
 
 ## 🎥 Demo
 
-<a href="https://drive.google.com/file/d/1RuZmila2enzo-SuyfwZrRF3XrX1LwYAS/view?usp=drive_link">▶️ Watch Demo Video</a>
+<a href="https://drive.google.com/file/d/1tpcSEqieE42R5FLoCpPx-bhlImPN4XJ7/view?usp=drive_link">▶️ Watch Demo Video</a>
 
 ---
 
